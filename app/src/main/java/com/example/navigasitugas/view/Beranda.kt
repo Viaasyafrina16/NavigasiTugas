@@ -66,6 +66,16 @@ fun Beranda(
                 fontSize = 18.sp
             )
 
+            Spacer(modifier = Modifier.height(40.dp))
+
+            Button(
+                onClick = onSubmitClick,            // Aksi ketika tombol diklik
+                modifier = Modifier
+                    .fillMaxWidth(0.6f)             // Tombol selebar 60% layar
+                    .height(50.dp),                 // Tinggi 50dp
+                colors = ButtonDefaults.buttonColors(
+                    co
+
         }
     }
 
