@@ -34,5 +34,30 @@ fun DataApp(
                     }
                 )
             }
+            composable(route = Navigasi.Formulir.name) {
+                FormDataDiri(
+                    OnSubmitBtnClick = {
+                        navController.navigate(Navigasi.Detail.name)
+                    }
+                )
+            }
+            composable(Navigasi.Detail.name) {
+                TampilData(
+                    onBerandaClick = {
+                        navController.navigate(Navigasi.Beranda.name) {
+                            popUpTo(Navigasi.Beranda.name) { inclusive = true }
+                        }
+                    },
+                    onFormulirClick = {
+                        navController.navigate(Navigasi.Formulir.name)
+                    }
+                )
+            }
         }
+    }
 }
+
+
+
+
+
