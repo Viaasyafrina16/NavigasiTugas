@@ -20,4 +20,21 @@ import com.example.navigasiku.R
 fun Beranda(
     onSubmitClick: () -> Unit
 ) {
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(
+                        text = "Selamat Datang",
+                        color = Color.White
+                    )
+                },
+                colors = TopAppBarDefaults.
+                topAppBarColors(
+                    containerColor = Color(0xFF9575CD)    // ungu tua
+                )
+            )
+        }
+    ) { isiRuang ->
+}
 
