@@ -50,6 +50,18 @@ fun FormIsian(
                 .background(Color(0xFFEDE7F6)),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            ElevatedCard(
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth(0.9f),
+                elevation = CardDefaults.cardElevation(8.dp),
+                colors = CardDefaults.cardColors(containerColor = Color.White)
+            ) {
+        }
+        }
+
+
+        }
 
 
 
