@@ -60,6 +60,12 @@ fun Beranda(
                 fontSize = 26.sp
             )
 
+            Text(
+                text = "20230140211",
+                color = Color(0xFF9575CD),
+                fontSize = 18.sp
+            )
+
         }
     }
 
