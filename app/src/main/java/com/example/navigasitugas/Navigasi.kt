@@ -21,3 +21,10 @@ fun DataApp(
 
     modifier: Modifier
 ) {
+    Scaffold { isiRuang ->
+        NavHost(
+            navController = navController,
+            startDestination = Navigasi.Beranda.name,
+            modifier = Modifier.padding(isiRuang)
+        ) {
+}
