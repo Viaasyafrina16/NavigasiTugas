@@ -26,10 +26,36 @@ fun FormIsian(
     var jk by remember { mutableStateOf("") }
     var status by remember { mutableStateOf("") }
 
+    val statusList = listOf("Janda", "Lajang", "Duda")
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(
+                        text = "Formulir Pendaftaran",
+                        color = Color.White
+                    )
+                },
+                colors = TopAppBarDefaults.
+                topAppBarColors(containerColor = Color(0xFF9575CD))
+            )
+        }
+    ) { isiRuang ->
+
+        Column(
+            modifier = Modifier
+                .padding(isiRuang)
+                .fillMaxSize()
+                .background(Color(0xFFEDE7F6)),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
 
 
 
-}
+
+
+
 
 
 
