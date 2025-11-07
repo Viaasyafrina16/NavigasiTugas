@@ -41,5 +41,64 @@ fun TampilData(
             )
         }
     ) { isiRuang ->
+        Column(
+            modifier = Modifier
+                .padding(isiRuang)
+                .fillMaxSize()
+                .background(Color(0xFFEDE7F6)),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+
+            ElevatedCard(
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth(0.9f),
+                elevation = CardDefaults.cardElevation(8.dp),
+                colors = CardDefaults.cardColors(containerColor = Color.White)
+            ) {
+                Column(
+                    modifier = Modifier.padding(20.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    items.forEach { item ->
+                        Column {
+
+                            Text(
+                                text = item.first,
+                                fontSize = 14.sp,
+                                color = Color.Black
+                            )
+                            Text(
+                                text = item.second,
+                                fontSize = 22.sp,
+                                color = Color.Black,
+                                fontWeight = androidx.compose.ui.text.font.FontWeight.Bold
+                            )
+                        }
+
+                        Divider(
+                            thickness = 1.dp,
+                            color = Color(0xFF9575CD)
+                        )
+                    }
+                }
+                Spacer(modifier = Modifier.height(20.dp))
+
+                Button(
+                    onClick = onBackBtnClick,
+                    modifier = Modifier
+                        .fillMaxWidth(0.7f)
+                        .height(50.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF2196F3)
+                    )
+                ) {
+                    Text("Kembali ke Beranda", color = Color.White, fontSize = 16.sp)
+                }
+
+                Spacer(modifier = Modifier.height(10.dp))
+            }
+                }
+            }
 }
 
