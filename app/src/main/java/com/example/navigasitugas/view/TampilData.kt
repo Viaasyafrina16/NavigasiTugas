@@ -21,4 +21,11 @@ fun TampilData(
     onBackBtnClick: () -> Unit,
     onFormulirClick: () -> Unit
 ) {
+    val items = listOf(
+        Pair("NAMA LENGKAP", nama),
+        Pair("JENIS KELAMIN", jk),
+        Pair("STATUS PERKAWINAN", status),
+        Pair("ALAMAT", alamat)
+    )
+}
 
