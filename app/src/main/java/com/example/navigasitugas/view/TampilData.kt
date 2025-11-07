@@ -36,8 +36,7 @@ fun TampilData(
                         color = Color.White
                     )
                 },
-                colors = TopAppBarDefaults.
-                topAppBarColors(containerColor = Color(0xFF9575CD))
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color(0xFF9575CD))
             )
         }
     ) { isiRuang ->
@@ -97,8 +96,21 @@ fun TampilData(
                 }
 
                 Spacer(modifier = Modifier.height(10.dp))
-            }
+
+                Button(
+                    onClick = onFormulirClick,
+                    modifier = Modifier
+                        .fillMaxWidth(0.7f)
+                        .height(50.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF7E57C2) // Ungu seperti tombol submit form
+                    )
+                ) {
+                    Text("Isi Formulir Lagi", color = Color.White, fontSize = 16.sp)
                 }
             }
+        }
+    }
 }
+
 
